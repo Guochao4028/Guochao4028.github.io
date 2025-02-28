@@ -1,0 +1,255 @@
+/* 全局样式 */
+body {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* 导航栏样式 */
+nav {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* 轮播图样式 */
+.banner {
+    height: 400px;
+    background-image: url("./2.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.slider h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.slider p {
+    font-size: 18px;
+}
+
+/* 内容区域样式 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* 实例卡片样式 */
+.example-card {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.example-card:hover {
+    transform: translateY(-5px);
+}
+
+.example-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.example-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 底部样式 */
+footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #eaeaea;
+    padding: 20px 0;
+    text-align: center;
+    color: #666;
+}
+
+/* 修改.site-name样式 */
+.site-name {
+    padding-left: 10px;
+}
+
+/* 新增样式，将图片和.site-name包裹在一起 */
+.logo-and-name {
+    justify-content: space-between;
+    display: flex;
+    /* align-items: center; */
+    padding: 0 100px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 新增，使内容水平居中 */
+    /* padding-top: 50px; */
+}
+
+/* 轮播图样式 */
+.slider {
+    padding: 0px;
+    height: auto;
+    /* 高度自适应 */
+    background-image: url("./3.png");
+    background-size: contain;
+    /* 让图片完整显示在容器内 */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* 防止图片重复 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 56.25%;
+    /* 16:9 宽高比，可根据实际图片比例调整 */
+    position: relative;
+    /* 为绝对定位的子元素提供参考 */
+}
+
+/* 表单样式 */
+.form {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 新增父容器样式 */
+.instructions-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 30px;
+}
+
+.form-container {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex-basis: 50%;
+    /* 设置初始大小为 50% */
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    /* 确保内边距和边框包含在宽度内 */
+}
+
+/* instructions 样式 */
+.instructions {
+    padding: 30px;
+    flex-basis: 50%;
+    /* 新增，设置初始大小为 50% */
+    box-sizing: border-box;
+    /* 确保内边距和边框包含在宽度内 */
+}
+
+/* 清除浮动，避免影响后续布局 */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 表单标题样式 */
+.form-container h2 {
+    color: #111010;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* 表单组样式 */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* 表单标签样式 */
+.form-group label {
+    display: block;
+    color: #111010;
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* 表单输入框样式 */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 表单按钮样式 */
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 表单按钮悬停样式 */
+.form-group button:hover {
+    background-color: #0056b3;
+}
